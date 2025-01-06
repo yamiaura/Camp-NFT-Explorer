@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Network NFT Explorer</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Camp Network NFT Explorer">
+    <meta property="og:description" content="A simple tool to view NFTs owned by a wallet address. Enter a wallet address to explore its NFTs.">
+    <meta property="og:image" content="https://nft.wootwoot.site/assets/preview.jpg">
+    <meta property="og:url" content="https://nft.wootwoot.site">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Camp Network NFT Explorer">
+    <meta name="twitter:description" content="A simple tool to view NFTs owned by a wallet address. Enter a wallet address to explore its NFTs.">
+    <meta name="twitter:image" content="https://nft.wootwoot.site/assets/preview.jpg">
+    <meta name="twitter:url" content="https://nft.wootwoot.site">
+
+    <!-- General Meta Tags -->
+    <meta name="description" content="A basic NFT explorer where you can enter a wallet address and view its NFTs.">
+    <meta name="keywords" content="NFT Explorer, Wallet Address, Camp Network, NFT Viewer, Web3">
+    <meta name="author" content="Yami Aura">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1>Camp Network NFT Explorer</h1>
+            <div class="search-container">
+                <input type="text" id="walletAddress" placeholder="Enter wallet address (0x...)">
+                <button class="search-btn" id="searchButton">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div id="results"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="https://x.com/yamiaura" target="_blank">Made by Yami</a>
+            <span>|</span>
+            <a href="https://campnetwork.xyz" target="_blank">Camp Network</a>
+            <span>|</span>
+            <a href="https://loyalty.campnetwork.xyz/loyalty?referral_code=DGLVQ449" target="_blank">Incentivized Testnet</a>
+        </div>
+    </footer>
+
+    <div id="mediaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <button id="topButton" class="scroll-button top-button" title="Go to top">↑</button>
+    <button id="bottomButton" class="scroll-button bottom-button" title="Go to bottom">↓</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
